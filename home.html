@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Code Zone - Home</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+    <!--External CSS file-->
+    <link rel="stylesheet" href="styles/main.css">
+    <!--Change background to white and footer text to black on homepage-->
+    <style>
+      body {
+        background-color: #FFFFFF;
+      }
+      .footer p {
+        color: #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container-home">
+      <!--Home page header with site logo-->
+      <header>
+        <a href="home.html">
+          <img id="sitelogo" src="images/sitelogo.png" alt="Home"></a>
+      </header>
+      <!--Horizontal navigation menu bar with drop-down menu for Stay page-->
+      <div class="navbar" id="myNav">
+        <a href="#" class="active">Home</a>
+      </div>
+      <!--Main content div-->
+      <div id="content">
+        <p>Welcome to Code Zone! Sign up for your free account to sit back, relax, and code away.</p>
+        <br>
+        <!--Sign up Now Button-->
+        <a href="index.html"><button id="signUpNow">Sign Up</button></a>
+      </div>
+      <br>
+     <!--Footer-->
+     <div class="footer">
+       <p class="footer">Copyright 2020 by Valerie Hare.</p>
+       <p>Logo created by <a href="https://www.designevo.com/logo-maker/" title="Free Online Logo Maker">DesignEvo logo maker</a></p>
+     </div>
+   </div>
+   <!--External JS file-->
+   <script src="scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Code Zone - Login</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+    <!--External JS file-->
+    <script src="scripts/main.js"></script>
+    <!--External CSS file-->
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+      .footer {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <!--Login page site logo-->
+        <a href="home.html">
+          <img id="sitelogo-login" src="images/sitelogo.png" alt="Home"></a>
+      <h1>Login Form</h1>
+       <div class="myForm">
+          <input type="email" placeholder="Email" id="myEmail">
+          <input type="password" placeholder="Password" id="myPassword">
+          <!--Sign up and Sign In buttons-->
+          <button onclick="signUp()" id="signUp">Sign Up</button>
+          <button onclick="signIn()" id="signIn">Sign In</button>
+       </div>
+     </div>
+    <!--Footer-->
+      <div class="footer">
+       <p class="footer">Copyright 2020 by Valerie Hare.</p>
+       <p class="footer">Logo created by <a href="https://www.designevo.com/logo-maker/" title="Free Online Logo Maker">DesignEvo logo maker</a></p>
+     </div>
+  </body>
+</html>

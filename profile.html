@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Code Zone -Valerie Hare</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+    <!--External CSS file-->
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+      body {
+        background-color: #FFFFFF;
+      }
+      .footer p {
+        color: #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container-home">
+      <!--Top header with site logo-->
+      <header>
+        <a href="home.html">
+          <img id="sitelogo" src="images/sitelogo.png" alt="Home"></a>
+      </header>
+      <!--Horizontal navigation menu bar with drop-down menu for Stay page-->
+      <div class="navbar" id="myNav">
+        <a href="#" class="active">Profile</a>
+      </div>
+      <!--Main content div-->
+      <div id="content">
+        <h2 contenteditable="true">Valerie Hare</h2>
+        <img src="images/avatarlogo.png" id="avatarlogo">
+        <br>
+        <p id="profile">Welcome to Code Zone! Start coding HTML5 and CSS3 below!</p>
+        <br>
+        <!--Code Editor for HTML and CSS-->
+        <textarea id="html" placeholder="HTML"></textarea>
+        <textarea id="css" placeholder="CSS"></textarea>
+        <br>
+        <iframe id="code"></iframe>
+        <br><br>
+        <!--Sign Out Button-->
+        <button onclick="signOut()" id="signOut">Sign Out</button>
+        <br><br>
+        <!--Footer-->
+         <div class="footer">
+          <p class="footer">Copyright 2020 by Valerie Hare.</p>
+          <p>Logo created by <a href="https://www.designevo.com/logo-maker/" title="Free Online Logo Maker">DesignEvo logo maker</a></p>
+         </div>
+       </div>
+     </div>
+     <!--External JS file-->
+     <script src="scripts/main.js"></script>
+  </body>
+</html>

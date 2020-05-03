@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+ background: #528CA3;
+}
+/*--Div container for Login page--*/
+#container {
+  width: 100%;
+  height: auto;
+  background: #528CA3;
+  padding-top: 50px;
+  padding-bottom: 25%;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*--Site Logo on Login page sends all users to public home page--*/
+#sitelogo-login {
+  width: 35%;
+  margin: 0 110px 0 110px;
+}
+/*--Form title--*/
+h1 {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 2.4rem;
+  padding-bottom: 5px;
+}
+/*--Form div--*/
+.myForm {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  align-items: center;
+  margin: 10px auto;
+  padding: 15px;
+}
+/*--Email and Pasword input fields--*/
+#myEmail, #myPassword {
+  width: 100%;
+  height: 45px;
+  display: block;
+  margin: 12px auto;
+  padding: 2px;
+}
+/*--Sign up, sign in, and sign up now buttons with navy background color--*/
+#signUp, #signIn, #signUpNow {
+  background-color: #00203F;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px 5px 0 5px;
+}
+/*--Button on hover--*/
+#signUp:hover, #signIn:hover, #signOut:hover, #signUpNow:hover {
+  background-color: #7FDBFF;
+  color: #000000;
+}
+/*--Div class footer--*/
+.footer {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25%;
+  color: #FFFFFF;
+}
+.footer p {
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  padding: 2%;
+}
+.footer a {
+  text-decoration: none;
+  color: #00203F;
+}
+/*---------Home page---------*/
+/*---Div container--*/
+#container-home {
+  width: 100%;
+  height: auto;
+  background-color: #FFFFFF;
+}
+/*--Site header section--*/
+header {
+  background-color: #528CA3;
+}
+#sitelogo {
+  width: 30%;
+  padding: 0;
+}
+/*--Navigation bar menu--*/
+.navbar {
+  overflow: hidden;
+  background-color: #00203F;
+}
+/*--Navigation links--*/
+.navbar a {
+  float: left;
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+  padding: 14px 16px;
+}
+/*--Hover over navigation links--*/
+.navbar a:hover {
+  background-color: #C9C9CB;
+  color: #000000;
+}
+/*--Active link to highlight current page--*/
+.navbar a.active {
+  background-color: #698DAB;
+  color: #FFFFFF;
+}
+#content {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*--Welcome statement--*/
+p {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.3rem;
+  color: #000000;
+  display: inline-block;
+  padding: 15% 5% 10% 5%;
+}
+/*---Profile Page only accessible to logged in users with account---*/
+/*--Username with contenteditable that can be changed--*/
+h2 {
+  padding: 20px 0 20px 0;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  color: #00203F;
+}
+/*---Avatar image---*/
+#avatarlogo {
+  width: 20%;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#profile {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.1rem;
+  padding: 10% 5%;
+}
+/*--Code editor--*/
+textarea {
+  width: 48%;
+  float: top;
+  min-height: 250px;
+  overflow: scroll;
+  margin: auto;
+  display: inline-block;
+  background: #f4f4f9;
+  outline: none;
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+}
+/*--iframe--*/
+iframe {
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  height: 10em;
+}
+/*--Sign out button--*/
+#signOut {
+  background-color: #00203F;
+  color: #FFFFFF;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 15px 20px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*--------Media queries for TABLET screens >= 768px wide--------*/
+@media only screen and (min-width: 768px) {
+  /*--Login Form page--*/
+  #container {
+    padding-bottom: 45%;
+  }
+  #sitelogo-login {
+    text-align: center;
+    margin: 0 32% 0 32%;
+  }
+  #myEmail, #myPassword {
+    width: 70%;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  /*--Home page that all users can access/see--*/
+  #content {
+    width: 90%;
+  }
+  /*--Profile page--*/
+  #profile {
+    font-size: 1.3rem;
+  }
+}
+/*--------Media queries for DESKTOP screens >= 1000px wide--------*/
+@media only screen and (min-width: 1000px) {
+  /*--Login Page--*/
+  #container {
+    width: 50%;
+    padding-bottom: 13%;
+  }
+  #myEmail, #myPassword {
+    width: 50%;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  /*--Home page--*/
+  #sitelogo {
+    width: 8%;
+  }
+  #content {
+    width: 50%;
+  }
+  .footer {
+    margin-top: 10%;
+  }
+  /*----Profile Page----*/
+  h2 {
+    padding-top: 30px;
+  }
+
+}
