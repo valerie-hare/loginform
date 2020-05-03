@@ -1,0 +1,2 @@
+# loginform
+In my Front End Web Development II class, I created a login system that works with Firebase. This login form only allows signed up users to access their profile pages, while all users can see the "Code Zone" home page. On this home page, users can click "Sign Up," which sends them back to the sign up page. Logged in users have the option to change their username and can code HTML5 and CSS3, which outputs on the text box below. I used a combination of HTML5, CSS3, JavaScript, and Firebase to create this authentication system.
